@@ -17,7 +17,7 @@ This project is set up as a [Liferay Workspace](https://dev.liferay.com/develop/
 ## Modules
 
 Bundles:
-  * [Portal Settings Web](https://github.com/triberay/triberay-auth-lookandfeel/tree/master/modules/triberay-auth-lf-portal-settings-web)
+  * [Portal Settings Web](https://github.com/triberay/triberay-auth-lookandfeel/tree/master/modules/triberay-auth-lf-portal-settings-web):
      Adds a "Look & Feel" tab to the Authentication section in the Portal Settings of each Liferay instance.
   * [ServicePreAction](https://github.com/triberay/triberay-auth-lookandfeel/tree/master/modules/triberay-auth-lf-servicepreaction):
      Makes the configuration available to the (standard) Liferay login portlet.
