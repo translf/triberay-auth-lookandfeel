@@ -1,0 +1,211 @@
+@import "bourbon";
+@import "mixins";
+
+body {
+  .portlet-login .auth-lf-signoutbutton {
+    margin-top: 20px;
+  }
+
+  .portlet-login,
+  .login-container {
+
+    .authLFContainer.authLFWidthFull {
+      width: 100%;
+    }
+    .authLFContainer.authLFWidthHalf {
+      width: 50%;
+    }
+    .authLFContainer.authLFWidth480 {
+      max-width: 480px;
+    }
+    .authLFContainer.authLFWidth450 {
+      max-width: 450px;
+    }
+    .authLFContainer.authLFWidth400 {
+      max-width: 400px;
+    }
+    .authLFContainer.authLFWidth350 {
+      max-width: 350px;
+    }
+    .authLFContainer.authLFWidth300 {
+      max-width: 300px;
+    }
+    .authLFContainer.authLFAlignLeft {
+      margin-left: 0;
+      margin-right: auto;
+    }
+    .authLFContainer.authLFAlignCenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .authLFContainer.authLFAlignRight {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    .authLFContainer.authLFButtonStyleFull {
+      .navigation ul.taglib-icon-list li {
+        width: 100%;
+      }
+    }
+    .authLFContainer.authLFButtonStyleHalf {
+      .navigation ul.taglib-icon-list li {
+        width: 48%;
+        margin-right: 0;
+      }
+      .navigation ul.taglib-icon-list li:nth-child(even) {
+        float:right;
+      }
+    }
+    .authLFContainer.authLFButtonStyleButton {
+      .navigation ul.taglib-icon-list li {
+        width: 40px;
+      }
+    }
+
+    .login-panel-container,
+    .navigation ul.taglib-icon-list li,
+    .navigation span {
+      margin-top: 8px;
+      margin-bottom: 8px;
+
+      .panel,
+      a.taglib-icon {
+        position: relative;
+        display: block;
+        border: 1px solid rgba(0,0,0,0.05);
+        border-radius: 4px;
+
+        img,
+        i {
+          position: absolute;
+          left: 0;
+          top: 0;
+          line-height: 35px;
+          width: 33px;
+          font-size: 1.3em;
+          text-align: center;
+          border-right: 1px solid rgba(0, 0, 0, 0.05);
+          padding-left: 2px;
+        }
+      }
+      .panel .sign-in-form {
+        .control-label {
+          display: none;
+        }
+        .form-group {
+          margin-bottom: 10px;
+        }
+        .button-holder {
+          margin: 0;
+        }
+      }
+      .panel .panel-heading,
+      a.taglib-icon {
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+      }
+      a.taglib-icon {
+        padding: 4px 12px 5px 42px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .taglib-text {
+          white-space: nowrap;
+        }
+      }
+      a.taglib-icon:hover {
+        background-color: #f5f5f5;
+        .taglib-text {
+          text-decoration: none;
+        }
+      }
+    }
+    .login-panel-container .panel .panel-heading,
+    .navigation ul.taglib-icon-list li.login-button a.taglib-icon {
+      height: 35px;
+      font-size: 15px;
+      line-height: 25px;
+      padding: 4px 12px 5px 42px;
+      background-color: #666;
+      color: #fff;
+      overflow: hidden;text-overflow: ellipsis;
+
+      i {
+        border-color: rgba(255, 255, 255, 0.3)
+      }
+    }
+    .login-panel-container .panel .panel-heading:hover,
+    .navigation ul.taglib-icon-list li.login-button a.taglib-icon:hover {
+      background-color: #999;
+      text-decoration: none;
+      .taglib-text {
+        text-decoration: none;
+      }
+    }
+    /* Email */
+    .login-panel-container.email .panel,
+    .login-panel-container.forgot-password .panel {
+      .panel-heading {
+        background-color: #5F76A8;
+      }
+      .panel-heading:hover {
+        background-color: #5069A0;
+      }
+    }
+    /* Facebook */
+    .navigation ul.taglib-icon-list li.login-button.facebook {
+      a.taglib-icon {
+        background-color: #5374B9;
+      }
+      a.taglib-icon:hover {
+        background-color: #4267b2;
+      }
+    }
+    /* GitHub */
+    .navigation ul.taglib-icon-list li.login-button.github {
+      a.taglib-icon {
+        background-color: #444444;
+      }
+      a.taglib-icon:hover {
+        background-color: #2b2b2b;
+      }
+    }
+    /* Google */
+    .navigation ul.taglib-icon-list li.login-button.google {
+      a.taglib-icon {
+        background-color: #dd4b39;
+      }
+      a.taglib-icon:hover {
+        background-color: #c23321;
+      }
+    }
+    /* OpenId */
+    .navigation ul.taglib-icon-list li.login-button.openid,
+    .login-panel-container.openid .panel {
+      .panel-heading,
+      a.taglib-icon {
+        background-color: #f7931e;
+        img {
+          padding: 8px 9px 9px 9px;
+        }
+      }
+      .panel-heading:hover,
+      a.taglib-icon:hover {
+        background-color: #da7908;
+      }
+    }
+    /* Twitter */
+    .navigation ul.taglib-icon-list li.login-button.twitter {
+      a.taglib-icon {
+        background-color: #55acee;
+      }
+      a.taglib-icon:hover {
+        background-color: #2795e9;
+      }
+    }
+  }
+}

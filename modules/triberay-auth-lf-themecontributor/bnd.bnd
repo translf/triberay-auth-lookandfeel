@@ -1,0 +1,5 @@
+Bundle-Name: Triberay Auth Look & Feel - Theme Contributor
+Bundle-SymbolicName: com.triberay.auth.lf.themecontributor
+Bundle-Version: 1.0.0
+Liferay-Theme-Contributor-Type: triberay-auth-lf-themecontributor
+Web-ContextPath: /triberay-auth.lf-themecontributor

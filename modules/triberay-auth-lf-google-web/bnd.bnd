@@ -1,0 +1,5 @@
+Bundle-Name: Triberay Auth Look & Feel - Google Web Modification
+Bundle-SymbolicName: com.triberay.auth.lf.google.web
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.login.authentication.google.web;bundle-version="2.0.0"
+-sources: true

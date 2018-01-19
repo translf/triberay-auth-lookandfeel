@@ -1,0 +1,1 @@
+<%@page import="com.triberay.auth.lf.configservice.model.AuthLFConfig" %>

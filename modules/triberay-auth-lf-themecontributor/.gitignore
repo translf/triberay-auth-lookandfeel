@@ -1,0 +1,4 @@
+.gradle/
+src/main/resources/META-INF/resources/css/.sass-cache/
+build/
+target/

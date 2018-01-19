@@ -1,0 +1,5 @@
+Bundle-Name: Triberay Auth Look & Feel - Login JSP Hook
+Bundle-SymbolicName: com.triberay.auth.lf.login.jsp.hook
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.login.web;bundle-version="1.0.0"
+-sources: true

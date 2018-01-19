@@ -1,0 +1,5 @@
+Bundle-Name: Triberay Auth Look & Feel - Facebook Connect Web Modification
+Bundle-SymbolicName: com.triberay.auth.lf.facebook.connect.web
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.login.authentication.facebook.connect.web;bundle-version="2.0.0"
+-sources: true

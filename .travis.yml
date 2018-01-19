@@ -1,0 +1,25 @@
+language: java
+sudo: false
+jdk:
+- oraclejdk8
+before_script:
+- chmod +x gradlew
+script:
+- "./gradlew check"
+- "./gradlew codeCoverageReport"
+- sonar-scanner
+after_success:
+- bash <(curl -s https://codecov.io/bash)
+addons:
+  sonarcloud:
+    organization: triberay
+    token:
+      secure: GV2/eoeaFF5anwP0UCBoKKgqsRiv3zqPwTppiR+KrDWxnrB0L5LLc00ziFk4wmpjRZ4pgyKRDQl4I3wuGoIpUnDNW0PhtqIaOGyI21LvbI8dsrPS4wfyYn4SbkbqZyKJm5NUvzVi7Cpt9iVxusbkKk3THo0PdknSfpKyanNgYYZmBXtmRk7RGbJwyf/Dwpt4djBC97OtxBjgJ80o072JkD5Ypbz0PeCwQ3g5JuOc4IzbjSHY0KxPet5t5SQFvU7j79puHnO+3xPrPCvMnRDCeRSJZbm7jfYCTjnWhMmM34fQljdFZ7wsj5pXki6H3LXs3pU5PJOhRlZTMyzW2DgH9C+RJQO/tAuqtZ1eGRAeP6DKhRHB2vhRINeDrrtksL22t+/2IHyJoUzKG6jyr+3hxBebOCV4a9FpdJ+gyMTPkBb+bHyDvmuut+oQJjSUCUavpgcQSp4S9u/caOyD3BQPK5VVmgMLQAto9SKLhicgXtYg7tw4JjX1wSTAAASBCEjFry5nCgDrsPorNoyqHjZoGIXTo9iOkdBGYV6ZhYs01uwDc7H5O7qomO6B0WY423i6a858LIpUmuV+qzOnRrhpN9b7QrUpiNatoEsC6OuoOTYj6qt+wYPQqiiDe5FMKnfyW5WE7VW5niMJ4t2z0w3OCWxiUdj9LVVnb9zBm9pl+vs=
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
+notifications:
+  slack:
+    rooms:
+      secure: GaHcqYlnKnVJjAQyfb5O3MD10c7KEBxx0ubOxAdxuSXWEpZyt5tpDiFmF0PcWeZwoPm7Z7LyKDexCJ8KTTDsY02HM1zFymkzGDihiFufCRj/9Ae+z2qtByG4jzS1MmvayTJXyJWlL+EFXM8JCNf0xARsqbQvJSduAGHc08zWjmnUWN+T//NGmQXLoqxWRw/ivvBMJ7gwclRxEDs+bfDZQ9Uy1hso1dbWzIbknuvT3GKw9eSODjb8KCoCXgW5ebit399E9JIxi91He2CrfIrDA0vIaBhAZ0l3IW/eixVCAN1jYtd9mcWy/XEKU5fNvnq7bf1r7b+1FPlD/Q9OmhMyz/esfFmzjU7p8+K4DG2Tee/lpCxjINPUshn480ymc2+2b/gIoTbA1xW0Z7g0ERCU2LEkpCIfLAS4T4AnEdDHAaIG/5NtH0igTok8FjG0Mpch0B61yKpDDgGBu1hh4xGGp6+ILSb/Rb1CCYSkQMRXB0zt7c2ZIFd2s+UABPnoPZ8QXC5HpI4o8cPQaqHjULlHOGS6b5ctoHFJeLpmpwQcht8lVZYAEB4Q37RT88Qrv/35AeRbYay++G/COkfYU6V8wY5UnzmR0bmUsrbww60Tb6ty/KWaRZGqTD6oP/8aWX41VP2CGEjbSEyQxEgqQxdt2HMJXWGbyQkqDly+nybFM7k=

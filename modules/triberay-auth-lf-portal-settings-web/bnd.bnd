@@ -1,0 +1,9 @@
+Bundle-Name: Triberay Auth Look & Feel - Portal Settings Web
+Bundle-SymbolicName: com.triberay.auth.lf.portal.settings.web
+Bundle-Version: 1.0.0
+Liferay-Releng-Module-Group-Description:
+Liferay-Releng-Module-Group-Title: Portal Settings
+Web-ContextPath: /portal-settings-auth-lf-web
+Export-Package:\
+    com.triberay.auth.lf.configservice,\
+    com.triberay.auth.lf.configservice.model

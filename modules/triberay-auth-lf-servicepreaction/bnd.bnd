@@ -1,0 +1,4 @@
+Bundle-Name: Triberay Auth Look & Feel - ServicePreAction
+Bundle-SymbolicName: com.triberay.auth.lf.servicepreaction
+Bundle-Version: 1.0.0
+-sources: true
