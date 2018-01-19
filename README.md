@@ -1,10 +1,10 @@
-# Triberay Authentication Look & Feel
+# Triberay Authentication Look & Feel for Liferay
 
 <a href="https://travis-ci.org/triberay/triberay-auth-lookandfeel"><img src="https://api.travis-ci.org/triberay/triberay-auth-lookandfeel.svg?branch=master" alt="Travis CI" /></a>
 
 ## Description
 
-A sharper look & feel for the Liferay login, including recognisable social media login buttons.
+A sharper look & feel for the Liferay login portlet, including recognisable social media login buttons.
 
 ## Screenshot
 
