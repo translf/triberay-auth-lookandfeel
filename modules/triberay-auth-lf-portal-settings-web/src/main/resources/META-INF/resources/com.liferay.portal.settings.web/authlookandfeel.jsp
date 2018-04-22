@@ -25,7 +25,7 @@
     boolean showSignOut = authLFConfiguration.showSignOut();
 %>
 
-<img src="/o/portal-settings-auth-lf-web/images/triberay-logo-color.svg" class="triberay-logo-svg" height="50" style="float: left; padding-right: 10px;"/>
+<a href="https://www.triberay.com" target="_blank"><img src="/o/portal-settings-auth-lf-web/images/triberay-logo-color.svg" class="triberay-logo-svg" height="50" style="float: left; padding-right: 10px;"/></a>
 <liferay-ui:message key="auth-lf-intro"/><br/><br/>
 
 <aui:fieldset>
